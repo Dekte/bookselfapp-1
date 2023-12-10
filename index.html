@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>dekteisbook</title>
+  </head>
+  <body>
+    <header class="p-3 bg-gray-800">
+      <div class="flex justify-between items-center">
+        <a href="#" class="font-bold text-4xl text-gray-200">Dekteisbook</a>
+        <input
+          type="text"
+          placeholder="cari buku....."
+          class="px-4 py-2 rounded bg-gray-200"
+          id="search-input"
+        />
+      </div>
+    </header>
+    <div class="wrapper grid gap-4 b grid-flow-row-dense grid-cols-3">
+      <div class="container bg-white m-4 p-4 col-span-2">
+        <h2 class="container-header font-bold text-2xl text-center">
+          List Buku
+        </h2>
+        <div class="list-item" id="books"></div>
+      </div>
+      <div class="py-4 px-3">
+        <div class="container p-4 flex-col border rounded-lg">
+          <h2 class="py-4 font-bold text-2xl text-center">Tambah Buku</h2>
+          <form class="flex flex-col py-2" action="#" id="form">
+            <div class="flex flex-col font-light mb-3 shadow-sm">
+              <label for="title">Masukkan Judul Buku</label>
+              <input
+                class="border rounded-md p-2"
+                type="text"
+                id="title"
+                name="title"
+                placeholder="judul buku disini"
+                required
+              />
+            </div>
+            <div class="flex flex-col font-light mb-3 shadow-sm">
+              <label for="title">Nama Penulis</label>
+              <input
+                class="border rounded-md p-2"
+                type="text"
+                id="penulis"
+                name="penulis"
+                placeholder="Nama penulis disini"
+                required
+              />
+            </div>
+            <div class="flex flex-col font-light mb-3">
+              <label for="date">Masukan Tahun Pencetakan</label>
+              <input
+                class="border rounded-md p-2 shadow-sm"
+                type="number"
+                id="date"
+                name="date"
+                min="1000"
+                max="9999"
+                placeholder="Masukan tahun cetak"
+                required
+              />
+            </div>
+            <input
+              type="button"
+              value="Submit"
+              name="Submit"
+              class="btn-submit rounded-lg hover:bg-blue-400 bg-blue-500 text-white p-2 font-bold"
+              onclick="addBook();"
+            />
+          </form>
+        </div>
+        <div class="container">
+          <h2 class="container-header">Buku selesai</h2>
+          <div class="list-item" id="completed-books"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

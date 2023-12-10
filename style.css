@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Poppins:wght@300;500;700&display=swap");
+
+.filter-menu {
+  display: none;
+}
+.filter-button {
+  cursor: pointer;
+}
+.container {
+  background: #f8f9fa;
+  height: fit-content;
+}
+.custom-input {
+  background-color: #f8f9fa;
+}
+.item {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  gap: 10px;
+}
+.item > .inner h2 {
+  margin-bottom: unset;
+}
+
+.item > .inner p {
+  margin-top: 5px;
+}
+
+.inner h2 {
+  font-style: bold;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.inner p {
+  font-size: 0.9em;
+  color: #555555;
+  margin-bottom: 4px;
+}
+
+.inner p.timestamp {
+  font-size: 0.8em;
+  color: #777777;
+}
+
+.item {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.check-button {
+  width: 50px;
+  height: 20px;
+
+  border-radius: 25px 25px;
+  background-color: blue;
+  color: #ffffff;
+}
+
+.undo-button {
+  width: 50px;
+  height: 20px;
+  border-radius: 25px 0px 0px 25px;
+  background-color: #00d80e;
+  color: #ffffff;
+}
+
+.trash-button {
+  width: 50px;
+  height: 20px;
+  border-radius: 0px 25px 25px 0px;
+  background-color: #ff6666;
+  color: #ffffff;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+.custom-input {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
